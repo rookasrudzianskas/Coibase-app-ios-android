@@ -6,7 +6,6 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: colors.primaryBlue,
-        backgroundColor: colors.primaryBlue,
     },
 
     mainView: {

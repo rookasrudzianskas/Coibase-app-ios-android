@@ -28,5 +28,10 @@ export default StyleSheet.create({
     btnTextStyle: {
         color: colors.primaryBlue
     },
-
+    bottomView: {
+        position: 'absolute',
+        bottom: 30,
+        left: 20,
+        right: 20,
+    }
 })

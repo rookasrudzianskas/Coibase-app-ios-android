@@ -22,9 +22,9 @@ export default function Welcome(props) {
                 <Text style={style.textStyle}>App</Text>
                 {
                     visible &&
-                    <View>
-                        <Button text="Get Started" disabled={false} />
-                        <Button text="Sign In" disabled={false} onPress={() => navigation.navigate("Login")} />
+                    <View style={style.bottomView}>
+                        <Button text="Get Started" disabled={false} btnStyle={style.btnStyle} btnTextStyle={style.btnTextStyle} />
+                        <Button text="Sign In" disabled={false} onPress={() => navigation.navigate("Login")} btnTextStyle={style.btnStyle2} />
                     </View>
                 }
 

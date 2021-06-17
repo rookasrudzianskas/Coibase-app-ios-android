@@ -12,7 +12,7 @@ export default function RootNavigation() {
 
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator screenOptions={screenOptions}>
                 {/*     these are screens, we are going to be accessing*/}
                 <Stack.Screen name="Splash" component={Welcome} />
             </Stack.Navigator>

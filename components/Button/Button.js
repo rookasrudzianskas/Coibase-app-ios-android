@@ -17,6 +17,7 @@ export default function Button(props) {
                 </Text>
             )}
             {/* we form the button like this, because if we use defaults, we will not have control*/}
+            {/* works*/}
             {icon && <Image source={icon} resizeMode="contain" style={style.iconStyle} />}
         </TouchableOpacity>
     );

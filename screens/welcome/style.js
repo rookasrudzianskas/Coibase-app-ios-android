@@ -18,5 +18,15 @@ export default StyleSheet.create({
         color: colors.white,
         fontSize: RFValue(45),
         fontWeight: "bold",
-    }
+    },
+    btnStyle: {
+        backgroundColor: colors.white,
+    },
+    btnStyle2: {
+      marginTop: 20,
+    },
+    btnTextStyle: {
+        color: colors.primaryBlue
+    },
+
 })

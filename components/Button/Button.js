@@ -1,14 +1,23 @@
 import React from "react";
 import {View, Text, TouchableOpacity, Image} from "react-native";
+import style from "./style";
 
 export default function Button(props) {
 
-    const {text, icon, disable} = props;
+    const {text, icon, disabled, btnStyle, onPress, btnTextStyle } = props;
     return (
-        <TouchableOpacity activeOpacity={0.5}>
-            {text && <Text>{text}</Text>}
+        <TouchableOpacity activeOpacity={0.5} onPress={onPress} disabled={disabled} style={[style.btnContainer, btnStyle]}>
+            {text && (
+                <Text
+                    style={[style.btnText, style.btnTextStyle,
+                        {marginRight: icon ? 10 : 0 },
+                    ]}
+                >
+                    {text}
+                </Text>
+            )}
             {/* we form the button like this, because if we use defaults, we will not have control*/}
-            {icon && <Image source={icon} resizeMode="contain" />}
+            {icon && <Image source={icon} resizeMode="contain" style={style.iconStyle} />}
         </TouchableOpacity>
-    )
+    );
 }

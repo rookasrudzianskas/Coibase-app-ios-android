@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {View, Text, SafeAreaView} from 'react-native';
 import style from "../style.js";
+import {Button} from "../../../components";
 
 export default function Welcome(props) {
 
@@ -19,6 +20,13 @@ export default function Welcome(props) {
             <View style={style.mainView}>
                 <Text style={style.textStyle}>Coinbase</Text>
                 <Text style={style.textStyle}>App</Text>
+                {
+                    visible &&
+                    <View>
+                        <Button text="Get Started" disabled={false} />
+                        <Button text="Sign In" disabled={false} />
+                    </View>
+                }
 
             </View>
         </SafeAreaView>

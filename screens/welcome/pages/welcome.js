@@ -24,7 +24,7 @@ export default function Welcome(props) {
                     visible &&
                     <View>
                         <Button text="Get Started" disabled={false} />
-                        <Button text="Sign In" disabled={false} />
+                        <Button text="Sign In" disabled={false} onPress={() => navigation.navigate("Login")} />
                     </View>
                 }
 

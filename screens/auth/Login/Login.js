@@ -4,10 +4,18 @@ import {Button} from "../../../components";
 
 export default function Login() {
     return (
-        <View>
-            <Text>
+        <SafeAreaView>
+            <ScrollView>
+                <View>
+                    <Text>
+                        Sign in to Coinbase
+                    </Text>
+                </View>
 
-            </Text>
-        </View>
+                <View>
+                    <Button text="Sign in 🚀" disabled={false} />
+                </View>
+            </ScrollView>
+        </SafeAreaView>
     );
 }

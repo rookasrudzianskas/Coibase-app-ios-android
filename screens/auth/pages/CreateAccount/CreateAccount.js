@@ -41,7 +41,7 @@ export default function CreateAccount(props) {
                 </View>
 
                 <View style={style.btnView}>
-                    <Button text={"Start"} disabled={false}/>
+                    <Button text={"Start 🚀"} disabled={false}/>
                 </View>
             </ScrollView>
         </SafeAreaView>

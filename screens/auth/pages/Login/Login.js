@@ -1,8 +1,13 @@
-import React from "react";
-import {View, Text, SafeAreaView, ScrollView} from "react-native";
+import React, {useState} from "react";
+import {View, Text, SafeAreaView, ScrollView, TextInput, TouchableOpacity} from "react-native";
 import {Button} from "../../../../components";
 
-export default function Login() {
+export default function Login(props) {
+
+    const {navigation} = props;
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
     return (
         <SafeAreaView>
             <ScrollView>

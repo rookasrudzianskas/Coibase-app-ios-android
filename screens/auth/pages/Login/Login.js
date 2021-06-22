@@ -15,6 +15,10 @@ export default function Login(props) {
                     <Text>
                         Sign in to Coinbase
                     </Text>
+                    <View>
+                        <Text>Email</Text>
+                        <TextInput value={email} placeholder="Enter the email ✉️" onChangeText={(text) => setEmail(text)} />
+                    </View>
                 </View>
 
                 <View>

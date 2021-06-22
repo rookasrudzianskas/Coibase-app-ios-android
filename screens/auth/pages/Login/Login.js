@@ -23,7 +23,7 @@ export default function Login(props) {
 
                     <View style={style.setMargin}>
                         <Text style={style.textStyle1}>Password</Text>
-                        <TextInput style={style.textInputStyle} value={email} placeholder="Enter the password 🙈️" onChangeText={(text) => setPassword(text)} />
+                        <TextInput style={style.textInputStyle} type={password} value={password} placeholder="Enter the password 🙈️" onChangeText={(text) => setPassword(text)} />
                     </View>
 
                     <View style={style.flexRowView}>

@@ -6,33 +6,30 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: colors.white,
-        paddingTop: Platoform.OS === "android" ? SatusBar.currentHeight: 0,
+        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight: 0,
     },
 
     mainView: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
+        flexGrow: 1,
+        paddingTop: RFValue(60),
+        paddingHorizontal: 20,
+        justifyContent: "space-between",
     },
 
     textStyle: {
-        color: colors.white,
-        fontSize: RFValue(45),
+        fontSize: RFValue(20),
         fontWeight: "bold",
     },
-    btnStyle: {
-        backgroundColor: colors.white,
+
+    textStyle1: {
+        fontSize: RFValue(14),
+        fontWeight: "bold",
     },
-    btnStyle2: {
-        marginTop: 20,
-    },
-    btnTextStyle: {
-        color: colors.primaryBlue
-    },
-    bottomView: {
-        position: 'absolute',
-        bottom: 30,
-        left: 20,
-        right: 20,
+
+    flexRowView: {
+        marginTop: 30,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
     }
-})
+});

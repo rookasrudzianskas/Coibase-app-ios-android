@@ -31,13 +31,24 @@ export default function CreateAccount(props) {
 
                     <View style={style.setMargin}>
                         <Text>Email</Text>
-                        <TextInput value={email} placeholder={"hello@connexios.com"} style={style.textInputStyle} onChangeText={(text) => setEmail(text)} />
+                        <TextInput value={email} placeholder={"hello@connexious.com"} style={style.textInputStyle} onChangeText={(text) => setEmail(text)} />
                     </View>
 
                     <View style={style.setMargin}>
                         <Text>Password</Text>
                         <TextInput value={password} placeholder={"***********"} style={style.textInputStyle} onChangeText={(text) => setPassword(text)} />
                     </View>
+                </View>
+
+                <View style={style.section}>
+                    <Text>
+                        I certify, I am 18 years of age or older 👵
+                        <TouchableWithoutFeedback>
+                            <Text style={style.linkStyle2}>
+                                User Agreement
+                            </Text>
+                        </TouchableWithoutFeedback>
+                    </Text>
                 </View>
 
                 <View style={style.btnView}>

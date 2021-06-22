@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {View, Text, SafeAreaView, ScrollView, TextInput, TouchableOpacity} from "react-native";
 import {Button} from "../../../../components";
+import style from "../style";
 
 export default function Login(props) {
 

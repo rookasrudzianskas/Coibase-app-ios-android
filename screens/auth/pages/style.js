@@ -1,6 +1,6 @@
 import {StyleSheet, StatusBar, Platform} from "react-native";
 import {RFValue} from "react-native-responsive-fontsize";
-import {colors} from "../../resources/colors";
+import {colors} from "../../../resources/colors.js";
 
 export default StyleSheet.create({
     container: {

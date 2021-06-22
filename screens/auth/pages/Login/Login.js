@@ -10,10 +10,10 @@ export default function Login(props) {
     const [password, setPassword] = useState("");
 
     return (
-        <SafeAreaView>
-            <ScrollView>
+        <SafeAreaView style={style.container}>
+            <ScrollView contentContainerStyle={style.mainView}>
                 <View>
-                    <Text>
+                    <Text style={style.textStyle}>
                         Sign in to Coinbase
                     </Text>
                     <View>

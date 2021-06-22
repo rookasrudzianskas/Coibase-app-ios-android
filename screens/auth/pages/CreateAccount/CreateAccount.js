@@ -38,8 +38,10 @@ export default function CreateAccount(props) {
                         <Text>Password</Text>
                         <TextInput value={password} placeholder={"***********"} style={style.textInputStyle} onChangeText={(text) => setPassword(text)} />
                     </View>
+                </View>
 
-
+                <View style={style.btnView}>
+                    <Button text={"Start"} disabled={false}/>
                 </View>
             </ScrollView>
         </SafeAreaView>

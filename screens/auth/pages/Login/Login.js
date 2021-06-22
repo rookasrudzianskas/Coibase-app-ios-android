@@ -16,14 +16,14 @@ export default function Login(props) {
                     <Text style={style.textStyle}>
                         Sign in to Coinbase
                     </Text>
-                    <View>
-                        <Text>Email</Text>
-                        <TextInput value={email} placeholder="Enter the email ✉️" onChangeText={(text) => setEmail(text)} />
+                    <View style={style.setMargin}>
+                        <Text style={style.textStyle1}>Email</Text>
+                        <TextInput style={style.textInputStyle} value={email} placeholder="Enter the email ✉️" onChangeText={(text) => setEmail(text)} />
                     </View>
 
-                    <View>
-                        <Text>Password</Text>
-                        <TextInput value={email} placeholder="Enter the password 🙈️" onChangeText={(text) => setPassword(text)} />
+                    <View style={style.setMargin}>
+                        <Text style={style.textStyle1}>Password</Text>
+                        <TextInput style={style.textInputStyle} value={email} placeholder="Enter the password 🙈️" onChangeText={(text) => setPassword(text)} />
                     </View>
 
                     <View>

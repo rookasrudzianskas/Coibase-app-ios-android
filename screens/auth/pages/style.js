@@ -31,5 +31,22 @@ export default StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-    }
+    },
+
+    setMargin: {
+        marginTop: 15,
+    },
+
+    textInputStyle: {
+        height: RFValue(45),
+        paddingHorizontal: 20,
+        fontSize: RFValue(15),
+        marginTop: 5,
+        borderWidth: 1,
+        borderRadius: 5,
+        borderColor: colors.mediumGray,
+    },
+    btnView: {
+        marginVertical: 20,
+    },
 });

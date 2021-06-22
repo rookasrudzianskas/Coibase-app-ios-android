@@ -19,6 +19,12 @@ export default function Login(props) {
                         <Text>Email</Text>
                         <TextInput value={email} placeholder="Enter the email ✉️" onChangeText={(text) => setEmail(text)} />
                     </View>
+
+                    <View>
+                        <Text>Password</Text>
+                        <TextInput value={email} placeholder="Enter the password 🙈️" onChangeText={(text) => setPassword(text)} />
+                    </View>
+
                 </View>
 
                 <View>

@@ -25,6 +25,17 @@ export default function Login(props) {
                         <TextInput value={email} placeholder="Enter the password 🙈️" onChangeText={(text) => setPassword(text)} />
                     </View>
 
+                    <View>
+                        <TouchableOpacity>
+                            <Text>Forgot password</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity>
+                            <Text>Privacy policy</Text>
+                        </TouchableOpacity>
+
+                    </View>
+
                 </View>
 
                 <View>

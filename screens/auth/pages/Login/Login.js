@@ -40,6 +40,7 @@ export default function Login(props) {
                 </View>
 
                 <View style={style.btnView}>
+                    {/* this is working on*/}
                     <Button text="Sign in 🚀" disabled={false} onPress={() => navigation.navigate("Home")} />
                 </View>
             </ScrollView>

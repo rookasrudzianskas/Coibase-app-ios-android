@@ -20,6 +20,7 @@ export default function RootNavigation() {
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="CreateAccount" component={CreateAccount} />
                 {/*<Stack.Screen name="Dashboard" component={Dashboard} />*/}
+                {/*<Stack.Screen name="Dashboard" component={Dashboard} />*/}
             </Stack.Navigator>
         </NavigationContainer>
     );

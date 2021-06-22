@@ -49,4 +49,8 @@ export default StyleSheet.create({
     btnView: {
         marginVertical: 20,
     },
+    linkStyle: {
+        fontSize: RFValue(14),
+        color: colors.primaryBlue,
+    }
 });

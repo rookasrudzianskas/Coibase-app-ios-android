@@ -26,12 +26,12 @@ export default function Login(props) {
                         <TextInput style={style.textInputStyle} value={email} placeholder="Enter the password 🙈️" onChangeText={(text) => setPassword(text)} />
                     </View>
 
-                    <View>
-                        <TouchableOpacity>
+                    <View style={style.flexRowView}>
+                        <TouchableOpacity style={style.linkStyle}>
                             <Text>Forgot password</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity>
+                        <TouchableOpacity style={style.linkStyle}>
                             <Text>Privacy policy</Text>
                         </TouchableOpacity>
 
@@ -39,7 +39,7 @@ export default function Login(props) {
 
                 </View>
 
-                <View>
+                <View style={style.btnView}>
                     <Button text="Sign in 🚀" disabled={false} onPress={() => navigation.navigate("Home")} />
                 </View>
             </ScrollView>

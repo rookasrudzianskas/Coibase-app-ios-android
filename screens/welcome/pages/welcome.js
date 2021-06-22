@@ -23,7 +23,7 @@ export default function Welcome(props) {
                 {
                     visible &&
                     <View style={style.bottomView}>
-                        <Button text="Get Started" disabled={false} btnStyle={style.btnStyle} btnTextStyle={style.btnTextStyle} />
+                        <Button text="Get Started" disabled={false} onPress={() => navigation.navigate("CreateAccount")} btnStyle={style.btnStyle} btnTextStyle={style.btnTextStyle} />
                         <Button text="Sign In" disabled={false} onPress={() => navigation.navigate("Login")} btnTextStyle={style.btnStyle2} />
                     </View>
                 }

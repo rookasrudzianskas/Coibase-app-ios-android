@@ -28,7 +28,7 @@ export default function Login(props) {
                 </View>
 
                 <View>
-                    <Button text="Sign in 🚀" disabled={false} />
+                    <Button text="Sign in 🚀" disabled={false} onPress={() => navigation.navigate("Home")} />
                 </View>
             </ScrollView>
         </SafeAreaView>

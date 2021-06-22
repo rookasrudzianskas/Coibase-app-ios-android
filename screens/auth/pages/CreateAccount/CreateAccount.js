@@ -41,11 +41,16 @@ export default function CreateAccount(props) {
                 </View>
 
                 <View style={style.section}>
-                    <Text>
+                    <Text style={style.textStyle2}>
                         I certify, I am 18 years of age or older 👵
                         <TouchableWithoutFeedback>
                             <Text style={style.linkStyle2}>
-                                User Agreement
+                                User Agreement {" "}
+                            </Text>
+                        </TouchableWithoutFeedback>
+                        <TouchableWithoutFeedback>
+                            <Text style={style.linkStyle2}>
+                                 and Privacy Policy
                             </Text>
                         </TouchableWithoutFeedback>
                     </Text>

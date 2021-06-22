@@ -26,6 +26,12 @@ export default StyleSheet.create({
         fontWeight: "bold",
     },
 
+    textStyle2: {
+      flex: 1,
+      fontSize: RFValue(15),
+      colors: colors.mediumGray,
+    },
+
     flexRowView: {
         marginTop: 30,
         flexDirection: "row",
@@ -52,5 +58,13 @@ export default StyleSheet.create({
     linkStyle: {
         fontSize: RFValue(14),
         color: colors.primaryBlue,
+    },
+    linkStyle2: {
+        fontSize: RFValue(15),
+        color: colors.primaryBlue,
+    },
+    section: {
+        marginTop: 20,
+        flexDirection: "row",
     }
 });
